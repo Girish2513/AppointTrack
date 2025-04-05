@@ -21,7 +21,6 @@ urlpatterns = [
     path('register/', RegisterUserAPIView.as_view(), name='register'),
 
     # Appointment APIs
-    # path('appointments/', AppointmentListCreateView.as_view(), name='appointment-list-create'),
     path('appointments/<int:pk>/', AppointmentDetailView.as_view(), name='appointment-detail'),
 
     # Include router-generated URLs
